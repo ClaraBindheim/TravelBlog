@@ -1,0 +1,54 @@
+html {
+  padding: 3em;
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("../font/JetBrainsMonoNL-Regular.ttf");
+}
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  font-family: JetBrainsMono;
+}
+main h1 {
+  font-size: 2.6em;
+}
+main h2 {
+  font-size: 2em;
+}
+main p {
+  font-size: 1em;
+}
+main a {
+  font-size: 1.6em;
+}
+
+.home .headline {
+  margin: 0 auto;
+}
+.home .divider-one {
+  width: 70%;
+  margin-right: 30%;
+}
+.home .header-image {
+  margin: 3% 0;
+}
+.home .nav {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0 auto;
+}
+.home .nav li {
+  margin-top: 10%;
+}
+.home .impressum {
+  width: 20%;
+  margin: 0 0 0 80%;
+}
+.home .impressum a {
+  font-size: 0.9em;
+}
+
+/*# sourceMappingURL=style.css.map */
