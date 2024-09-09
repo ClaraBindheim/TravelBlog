@@ -17,10 +17,33 @@
         display: flex;
         flex-flow: column nowrap;
         margin: 0 auto;
+        width: 30%;
+ 
+            li{
+                margin-top: 5%;
+                list-style: none;
 
-        li{
-            margin-top: 10%;
-        }
+                a{
+                    text-decoration: none;
+                }
+
+                #bari,
+                #newZealand{
+                    display: block;
+                    width: 100%;
+                    text-align: end;
+                }
+
+                #arrow-sylt-bari{
+                    margin-left: 15%;
+                    transform: rotate(10deg);
+                }
+
+                #arrow-bari-aus{
+                    margin-left: 28%;
+                    transform: rotate(-15deg);
+                }
+            }
     }
 
     .impressum{

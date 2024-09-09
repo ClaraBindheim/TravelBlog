@@ -39,9 +39,28 @@ main a {
   display: flex;
   flex-flow: column nowrap;
   margin: 0 auto;
+  width: 30%;
 }
 .home .nav li {
-  margin-top: 10%;
+  margin-top: 5%;
+  list-style: none;
+}
+.home .nav li a {
+  text-decoration: none;
+}
+.home .nav li #bari,
+.home .nav li #newZealand {
+  display: block;
+  width: 100%;
+  text-align: end;
+}
+.home .nav li #arrow-sylt-bari {
+  margin-left: 15%;
+  transform: rotate(10deg);
+}
+.home .nav li #arrow-bari-aus {
+  margin-left: 28%;
+  transform: rotate(-15deg);
 }
 .home .impressum {
   width: 20%;
