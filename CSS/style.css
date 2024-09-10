@@ -36,30 +36,30 @@ main a {
   margin: 3% 0;
 }
 .home .nav {
-  display: flex;
-  flex-flow: column nowrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   margin: 0 auto;
-  width: 30%;
+  width: 50%;
 }
-.home .nav li {
+.home .nav ul {
+  padding: 0;
+}
+.home .nav ul li {
   margin-top: 5%;
   list-style: none;
 }
-.home .nav li a {
+.home .nav ul li a {
   text-decoration: none;
 }
-.home .nav li #bari,
-.home .nav li #newZealand {
+.home .nav ul li #bari,
+.home .nav ul li #newZealand {
   display: block;
   width: 100%;
-  text-align: end;
 }
-.home .nav li #arrow-sylt-bari {
-  margin-left: 15%;
+.home .nav ul li #arrow-sylt-bari {
   transform: rotate(10deg);
 }
-.home .nav li #arrow-bari-aus {
-  margin-left: 28%;
+.home .nav ul li #arrow-bari-aus {
   transform: rotate(-15deg);
 }
 .home .impressum {

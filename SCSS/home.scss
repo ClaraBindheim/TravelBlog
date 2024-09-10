@@ -14,11 +14,15 @@
     }
 
     .nav{
-        display: flex;
-        flex-flow: column nowrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         margin: 0 auto;
-        width: 30%;
- 
+        width: 50%;
+
+        ul{
+
+            padding: 0;
+            
             li{
                 margin-top: 5%;
                 list-style: none;
@@ -31,19 +35,17 @@
                 #newZealand{
                     display: block;
                     width: 100%;
-                    text-align: end;
                 }
 
                 #arrow-sylt-bari{
-                    margin-left: 15%;
                     transform: rotate(10deg);
                 }
 
                 #arrow-bari-aus{
-                    margin-left: 28%;
                     transform: rotate(-15deg);
                 }
             }
+        }    
     }
 
     .impressum{
