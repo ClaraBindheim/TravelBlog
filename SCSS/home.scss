@@ -23,6 +23,15 @@
 
             padding: 0;
             
+            #sylt,
+            #bari{
+                margin-bottom: 50%;
+            }
+
+            #bari{
+                margin-top: 30%;
+            }
+
             li{
                 margin-top: 5%;
                 list-style: none;
@@ -31,18 +40,12 @@
                     text-decoration: none;
                 }
 
-                #bari,
-                #newZealand{
-                    display: block;
-                    width: 100%;
-                }
-
                 #arrow-sylt-bari{
-                    transform: rotate(10deg);
+                    transform: translate(-20%) rotate(-4deg);
                 }
 
                 #arrow-bari-aus{
-                    transform: rotate(-15deg);
+                    
                 }
             }
         }    

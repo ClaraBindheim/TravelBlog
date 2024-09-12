@@ -1,5 +1,5 @@
 html{
-    padding: 3em;
+    padding: 1em 3em;
 }
 
 @font-face {
@@ -13,6 +13,11 @@ main{
     justify-content: center;
 
     font-family: JetBrainsMono;
+
+    a,
+    p{
+        color: black;
+    }
     
     h1{
         font-size: 2.6em;

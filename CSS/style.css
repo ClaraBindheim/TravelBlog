@@ -1,5 +1,5 @@
 html {
-  padding: 3em;
+  padding: 1em 3em;
 }
 
 @font-face {
@@ -11,6 +11,10 @@ main {
   flex-flow: column nowrap;
   justify-content: center;
   font-family: JetBrainsMono;
+}
+main a,
+main p {
+  color: black;
 }
 main h1 {
   font-size: 2.6em;
@@ -44,6 +48,13 @@ main a {
 .home .nav ul {
   padding: 0;
 }
+.home .nav ul #sylt,
+.home .nav ul #bari {
+  margin-bottom: 50%;
+}
+.home .nav ul #bari {
+  margin-top: 30%;
+}
 .home .nav ul li {
   margin-top: 5%;
   list-style: none;
@@ -51,16 +62,8 @@ main a {
 .home .nav ul li a {
   text-decoration: none;
 }
-.home .nav ul li #bari,
-.home .nav ul li #newZealand {
-  display: block;
-  width: 100%;
-}
 .home .nav ul li #arrow-sylt-bari {
-  transform: rotate(10deg);
-}
-.home .nav ul li #arrow-bari-aus {
-  transform: rotate(-15deg);
+  transform: translate(-20%) rotate(-4deg);
 }
 .home .impressum {
   width: 20%;
