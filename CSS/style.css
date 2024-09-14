@@ -1,73 +1,104 @@
-html {
-  padding: 1em 3em;
-}
-
 @font-face {
   font-family: "JetBrainsMono";
   src: url("../font/JetBrainsMonoNL-Regular.ttf");
 }
-main {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
+body {
+  margin: 0%;
+}
+body main {
   font-family: JetBrainsMono;
 }
-main a,
-main p {
+body main a,
+body main p {
   color: black;
 }
-main h1 {
-  font-size: 2.6em;
+body main h1 {
+  font-size: 2.6rem;
 }
-main h2 {
-  font-size: 2em;
+body main h2 {
+  font-size: 2rem;
 }
-main p {
-  font-size: 1em;
+body main p {
+  font-size: 1rem;
 }
-main a {
-  font-size: 1.6em;
+body main a {
+  font-size: 1.6rem;
 }
 
-.home .headline {
-  margin: 0 auto;
+.home .hidden {
+  display: none;
 }
-.home .divider-one {
+.home .active {
+  display: block;
+  position: fixed;
+  width: 100vw;
+  height: 60vh;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.home .slideshow {
+  height: 60vh;
+}
+.home .slideshow .headline {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 5%;
+}
+.home .slideshow .divider-one {
   width: 70%;
   margin-right: 30%;
 }
-.home .header-image {
-  margin: 3% 0;
+.home .animation {
+  height: 50px;
+  background-image: url("../images/ulut_fi9d_170228.jpg");
+  background-size: 150px;
+  background-repeat: repeat-x;
+}
+.home .animation #bus-icon {
+  width: 44px;
+  margin-top: 0.5%;
+  animation: drive 20s infinite linear;
+}
+@keyframes drive {
+  0% {
+    transform: translateX(0vw) rotateY(0deg);
+  }
+  49% {
+    transform: translateX(98vw) rotateY(0deg);
+  }
+  50% {
+    transform: translateX(98vw) rotateY(180deg);
+  }
+  99% {
+    transform: translateX(0vw) rotateY(180deg);
+  }
+  100% {
+    transform: translateX(0vw) rotateY(0deg);
+  }
 }
 .home .nav {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 0 auto;
   width: 50%;
+  margin: 5% auto;
 }
 .home .nav ul {
-  padding: 0;
-}
-.home .nav ul #sylt,
-.home .nav ul #bari {
-  margin-bottom: 50%;
-}
-.home .nav ul #bari {
-  margin-top: 30%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
 }
 .home .nav ul li {
-  margin-top: 5%;
   list-style: none;
 }
 .home .nav ul li a {
   text-decoration: none;
 }
-.home .nav ul li #arrow-sylt-bari {
-  transform: translate(-20%) rotate(-4deg);
-}
 .home .impressum {
+  position: fixed;
   width: 20%;
-  margin: 0 0 0 80%;
+  bottom: 3%;
+  right: 0;
 }
 .home .impressum a {
   font-size: 0.9em;

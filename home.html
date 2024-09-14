@@ -6,39 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Travel Blog</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <script src="script.js"></script>
   </head>
   <body>
     <main class="home">
-        <h1 class="headline">Travel Blog 2024/2025</h1>
-        <hr class="divider-one">
-        <img class="header-image" src="images/HeaderImages.png" alt="Eine Bildcollage verschiedener Urlaubsbilder"> 
+        <div class="slideshow">
+          <h1 class="headline">Travel Blog 2024/2025</h1>
+          <hr class="divider-one">
+          <img src="images/background/HeaderImages.png" alt="background" class="active diashow">
+          <img src="images/background/Rectangle 12.png" alt="background" class="hidden diashow">
+        </div>
         <div class="nav">
-          <ul class="nav-part" id="nav-part-1">
+          <ul class="nav-part" id="nav-part">
             <li id="sylt">
               <a href="sylt.html">Sylt</a>
             </li>
-            <li id="australia">
-              <a href="australia.html">Australia</a>
-            </li>
-          </ul>
-
-          <ul class="nav-part" id="nav-part-2">
-          <li>
-            <img class="arrow" id="arrow-sylt-bari" src="images/icons/Arrow.png">
-          </li>
-          <li>
-            <img class="arrow" id="arrow-bari-aus" src="images/icons/Arrow 2.png">
-          </li>
-          </ul>
-
-          <ul class="nav-part" id="nav-part-3">
             <li id="bari">
               <a href="bari.html">Bari</a>
+            </li>
+            <li id="australia">
+              <a href="australia.html">Australia</a>
             </li>
             <li id="newZealand">
               <a href="newZealand.html">New Zealand</a>
             </li>
           </ul>
+        </div>
+        <div class="animation">
+          <img src="images/icons/bus_430642 1.png" alt="A red bus" id="bus-icon">
         </div>
         <div class="impressum">
           <a href="impressum.html">Impressum</a>
