@@ -25,10 +25,12 @@ body main a {
   font-size: 1.6rem;
 }
 
-.home .hidden {
+.home .hidden,
+.pages .hidden {
   display: none;
 }
-.home .active {
+.home .active,
+.pages .active {
   display: block;
   position: fixed;
   width: 100vw;
@@ -38,26 +40,37 @@ body main a {
   left: 0;
   z-index: -1;
 }
-.home .slideshow {
+.home .slideshow,
+.home .headerImage,
+.pages .slideshow,
+.pages .headerImage {
   height: 60vh;
 }
-.home .slideshow .headline {
+.home .slideshow .headline,
+.home .headerImage .headline,
+.pages .slideshow .headline,
+.pages .headerImage .headline {
   display: block;
   text-align: center;
   margin: 0 auto;
   padding-top: 5%;
 }
-.home .slideshow .divider-one {
+.home .slideshow .divider-one,
+.home .headerImage .divider-one,
+.pages .slideshow .divider-one,
+.pages .headerImage .divider-one {
   width: 70%;
   margin-right: 30%;
 }
-.home .animation {
+.home .animation,
+.pages .animation {
   height: 50px;
   background-image: url("../images/ulut_fi9d_170228.jpg");
   background-size: 150px;
   background-repeat: repeat-x;
 }
-.home .animation #bus-icon {
+.home .animation #bus-icon,
+.pages .animation #bus-icon {
   width: 44px;
   margin-top: 0.5%;
   animation: drive 20s infinite linear;
@@ -79,29 +92,52 @@ body main a {
     transform: translateX(0vw) rotateY(0deg);
   }
 }
-.home .nav {
+.home .nav,
+.pages .nav {
   width: 50%;
   margin: 5% auto;
 }
-.home .nav ul {
+.home .nav ul,
+.pages .nav ul {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
 }
-.home .nav ul li {
+.home .nav ul li,
+.pages .nav ul li {
   list-style: none;
 }
-.home .nav ul li a {
+.home .nav ul li a,
+.pages .nav ul li a {
   text-decoration: none;
 }
-.home .impressum {
+.home .impressum,
+.pages .impressum {
   position: fixed;
   width: 20%;
-  bottom: 3%;
+  bottom: 2%;
   right: 0;
 }
-.home .impressum a {
+.home .impressum a,
+.pages .impressum a {
   font-size: 0.9em;
+}
+
+.pages .headerImage .header {
+  width: 100%;
+  height: auto;
+}
+.pages .headerImage .back {
+  display: flex;
+  flex-flow: row nowrap;
+  position: fixed;
+  width: 20%;
+  top: 12%;
+  left: 3%;
+}
+.pages .headerImage .back .arrow {
+  width: 44px;
+  margin-right: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

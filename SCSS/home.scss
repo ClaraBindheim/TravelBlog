@@ -1,4 +1,5 @@
-.home{
+.home,
+.pages{
 
     .hidden{
         display: none;
@@ -15,7 +16,8 @@
         z-index: -1;
     }
 
-    .slideshow{
+    .slideshow,
+    .headerImage{
 
         height: 60vh;
 
@@ -90,7 +92,7 @@
 
         position: fixed;
         width: 20%;
-        bottom: 3%;
+        bottom: 2%;
         right: 0;
     }
 }

@@ -1,0 +1,31 @@
+.pages{
+
+    .headerImage{
+
+        .header{
+            width: 100%;
+            height: auto;
+        }
+
+        .back{
+
+            .arrow{
+                width: 44px;
+                margin-right: 15px;
+            }
+
+            display: flex;
+            flex-flow: row nowrap;
+            position: fixed;
+            width: 20%;
+            top: 12%;
+            left: 3%;
+            
+        }
+
+    }
+    
+
+
+
+}
