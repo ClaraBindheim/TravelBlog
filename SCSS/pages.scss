@@ -2,6 +2,9 @@
 
     .headerImage{
 
+        height: fit-content;
+        margin-bottom: 5%;
+
         .header{
             width: 100%;
             height: auto;
@@ -14,18 +17,40 @@
                 margin-right: 15px;
             }
 
+            a{
+                font-size: 1.4rem;
+                margin: auto;
+            }
+
             display: flex;
             flex-flow: row nowrap;
             position: fixed;
-            width: 20%;
+            width: fit-content;
+            height: 44px;
             top: 12%;
-            left: 3%;
-            
+            left: 2%;
         }
 
     }
-    
+
+    .blog-content{
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        text-align: center;
+        width: 80vw;
+        margin: auto;
+
+        .one-image-horizontal{
+            
+            img{
+                width: 70vw;
+                object-fit: fill;
+                border-radius: 30px;
+            }
+        }
 
 
-
+    }
 }
