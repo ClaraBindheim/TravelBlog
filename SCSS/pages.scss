@@ -165,4 +165,68 @@
         }
 
     }
+
 }
+
+@media screen and (max-width: 600px) {
+
+    .headerImage{
+
+        .back{
+
+            .arrow{
+                position: fixed;
+                bottom: 12%;
+                right: 5%;
+
+            }
+
+            #back-text{
+                display: none;
+            }
+
+        }
+
+    }
+
+    .pages{
+
+        .blog-content{
+
+            width: 100%;
+
+            img,
+            .one-image-horizontal,
+            .one-image-vertical,
+            .one-image-text-horizontal,
+            .one-image-text-vertical,
+            .three-images,
+            .four-images{
+                width: 100%;
+                height: auto;
+                border-radius: 0%;
+            }
+
+            .one-image-text-horizontal,
+            .one-image-text-vertical{
+
+                img,
+                #text{
+                    border-radius: 0%;
+
+                    p{
+                        padding: 10%;
+                        word-break: break-word;
+                    }
+                }
+
+            }
+    
+            
+        }
+
+        .impressum{
+            display: none;
+        }
+    }
+} 

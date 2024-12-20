@@ -32,6 +32,7 @@
             width: 70%;
             margin-right: 30%;
         }
+
     }
 
     .animation{
@@ -95,4 +96,39 @@
         bottom: 2%;
         right: 0;
     }
+
 }
+
+@media screen and (max-width: 600px) {
+
+    .home{
+
+        .nav{
+        
+            .nav-part{
+                flex-flow: column;
+                width: 100%;
+                padding: 0%;
+                
+                li{
+                    padding-bottom: 10%;
+                }
+            }
+
+            width: 90%;
+            text-align: center;
+            margin-top: 10%;
+        }
+
+        .impressum{
+            width: 40%;
+
+        }
+
+    }
+
+    
+}
+
+
+   

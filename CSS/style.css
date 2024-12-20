@@ -123,6 +123,24 @@ body main a {
   font-size: 0.9em;
 }
 
+@media screen and (max-width: 600px) {
+  .home .nav {
+    width: 90%;
+    text-align: center;
+    margin-top: 10%;
+  }
+  .home .nav .nav-part {
+    flex-flow: column;
+    width: 100%;
+    padding: 0%;
+  }
+  .home .nav .nav-part li {
+    padding-bottom: 10%;
+  }
+  .home .impressum {
+    width: 40%;
+  }
+}
 .pages .headerImage {
   height: fit-content;
 }
@@ -254,6 +272,47 @@ body main a {
 .pages .blog-content .four-images .second-row img {
   width: 50%;
   height: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .headerImage .back .arrow {
+    position: fixed;
+    bottom: 12%;
+    right: 5%;
+  }
+  .headerImage .back #back-text {
+    display: none;
+  }
+  .pages .blog-content {
+    width: 100%;
+  }
+  .pages .blog-content img,
+  .pages .blog-content .one-image-horizontal,
+  .pages .blog-content .one-image-vertical,
+  .pages .blog-content .one-image-text-horizontal,
+  .pages .blog-content .one-image-text-vertical,
+  .pages .blog-content .three-images,
+  .pages .blog-content .four-images {
+    width: 100%;
+    height: auto;
+    border-radius: 0%;
+  }
+  .pages .blog-content .one-image-text-horizontal img,
+  .pages .blog-content .one-image-text-horizontal #text,
+  .pages .blog-content .one-image-text-vertical img,
+  .pages .blog-content .one-image-text-vertical #text {
+    border-radius: 0%;
+  }
+  .pages .blog-content .one-image-text-horizontal img p,
+  .pages .blog-content .one-image-text-horizontal #text p,
+  .pages .blog-content .one-image-text-vertical img p,
+  .pages .blog-content .one-image-text-vertical #text p {
+    padding: 10%;
+    word-break: break-word;
+  }
+  .pages .impressum {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
