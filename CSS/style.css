@@ -113,7 +113,7 @@ body main a {
 }
 .home .impressum,
 .pages .impressum {
-  position: fixed;
+  position: sticky;
   width: 10%;
   bottom: 2%;
   right: 0;
