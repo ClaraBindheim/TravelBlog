@@ -277,7 +277,7 @@ body main a {
 @media screen and (max-width: 600px) {
   .headerImage .back .arrow {
     position: fixed;
-    bottom: 12%;
+    bottom: 5%;
     right: 5%;
   }
   .headerImage .back #back-text {
