@@ -26,11 +26,13 @@ body main a {
 }
 
 .home .hidden,
-.pages .hidden {
+.pages .hidden,
+.attribution .hidden {
   display: none;
 }
 .home .active,
-.pages .active {
+.pages .active,
+.attribution .active {
   display: block;
   position: fixed;
   width: 100vw;
@@ -43,13 +45,18 @@ body main a {
 .home .slideshow,
 .home .headerImage,
 .pages .slideshow,
-.pages .headerImage {
+.pages .headerImage,
+.attribution .slideshow,
+.attribution .headerImage {
   height: 60vh;
+  overflow: hidden;
 }
 .home .slideshow .headline,
 .home .headerImage .headline,
 .pages .slideshow .headline,
-.pages .headerImage .headline {
+.pages .headerImage .headline,
+.attribution .slideshow .headline,
+.attribution .headerImage .headline {
   display: block;
   text-align: center;
   margin: 0 auto;
@@ -58,19 +65,23 @@ body main a {
 .home .slideshow .divider-one,
 .home .headerImage .divider-one,
 .pages .slideshow .divider-one,
-.pages .headerImage .divider-one {
+.pages .headerImage .divider-one,
+.attribution .slideshow .divider-one,
+.attribution .headerImage .divider-one {
   width: 70%;
   margin-right: 30%;
 }
 .home .animation,
-.pages .animation {
+.pages .animation,
+.attribution .animation {
   height: 50px;
   background-image: url("../images/ulut_fi9d_170228.jpg");
   background-size: 150px;
   background-repeat: repeat-x;
 }
 .home .animation #bus-icon,
-.pages .animation #bus-icon {
+.pages .animation #bus-icon,
+.attribution .animation #bus-icon {
   width: 44px;
   margin-top: 0.5%;
   animation: drive 20s infinite linear;
@@ -93,34 +104,43 @@ body main a {
   }
 }
 .home .nav,
-.pages .nav {
+.pages .nav,
+.attribution .nav {
   width: 50%;
   margin: 5% auto;
 }
 .home .nav ul,
-.pages .nav ul {
+.pages .nav ul,
+.attribution .nav ul {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
 }
 .home .nav ul li,
-.pages .nav ul li {
+.pages .nav ul li,
+.attribution .nav ul li {
   list-style: none;
 }
 .home .nav ul li a,
-.pages .nav ul li a {
+.pages .nav ul li a,
+.attribution .nav ul li a {
   text-decoration: none;
 }
 .home .impressum,
-.pages .impressum {
-  position: sticky;
-  width: 10%;
-  bottom: 2%;
-  right: 0;
+.pages .impressum,
+.attribution .impressum {
+  margin-top: 5%;
 }
 .home .impressum a,
-.pages .impressum a {
+.pages .impressum a,
+.attribution .impressum a {
   font-size: 0.9em;
+  margin-left: 90%;
+}
+.home .impressum hr,
+.pages .impressum hr,
+.attribution .impressum hr {
+  margin-left: 90%;
 }
 
 @media screen and (max-width: 600px) {
@@ -141,14 +161,17 @@ body main a {
     width: 40%;
   }
 }
-.pages .headerImage {
+.pages .headerImage,
+.pages .attribution {
   height: fit-content;
 }
-.pages .headerImage .header {
+.pages .headerImage .header,
+.pages .attribution .header {
   width: 100%;
   height: auto;
 }
-.pages .headerImage .back {
+.pages .headerImage .back,
+.pages .attribution .back {
   display: flex;
   flex-flow: row nowrap;
   position: fixed;
@@ -157,13 +180,21 @@ body main a {
   top: 12%;
   left: 2%;
 }
-.pages .headerImage .back .arrow {
+.pages .headerImage .back .arrow,
+.pages .attribution .back .arrow {
   width: 44px;
   margin-right: 15px;
 }
-.pages .headerImage .back a {
+.pages .headerImage .back a,
+.pages .attribution .back a {
   font-size: 1.4rem;
   margin: auto;
+}
+.pages .headerImage .links,
+.pages .attribution .links {
+  margin-top: 10%;
+  margin-left: 15%;
+  margin-bottom: 15%;
 }
 .pages .blog-content {
   display: flex;
@@ -273,6 +304,9 @@ body main a {
   width: 50%;
   height: 50%;
 }
+.pages .impressum {
+  display: none;
+}
 
 @media screen and (max-width: 600px) {
   .headerImage .back .arrow {
@@ -309,9 +343,6 @@ body main a {
   .pages .blog-content .one-image-text-vertical #text p {
     padding: 10%;
     word-break: break-word;
-  }
-  .pages .impressum {
-    display: none;
   }
 }
 
