@@ -1,0 +1,47 @@
+        <div class="four-images">
+            <div class="first-row">
+                2imgs
+            </div>
+            <div class="second-row">
+              2imgs
+            </div>
+        </div>
+
+
+        <div class="three-images">
+            <div class="first-row">
+                2imgs
+            </div>
+                1img
+          </div>
+
+
+          <div class="one-image-text-vertical">
+            
+            <div id="text">
+                <p>!</p>
+            </div>
+          </div>
+
+
+          <div class="one-image-text-horizontal">
+            
+            <div id="text">
+                <p></p>
+            </div>
+          </div>
+
+
+          <div class="one-image-vertical">
+            
+          </div>
+
+          <div class="two-image-vertical">
+
+          </div>
+
+          <div class="one-image-horizontal">
+            
+          </div>
+
+          

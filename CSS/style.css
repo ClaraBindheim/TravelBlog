@@ -203,6 +203,7 @@ body main a {
   text-align: center;
   width: 70vw;
   margin: auto;
+  margin-bottom: 5%;
 }
 .pages .blog-content img {
   width: 70vw;
@@ -299,7 +300,8 @@ body main a {
 }
 .pages .blog-content .three-images .first-row img {
   width: 50%;
-  height: 50%;
+  min-height: 50%;
+  object-fit: cover;
 }
 .pages .blog-content .four-images {
   margin: auto;

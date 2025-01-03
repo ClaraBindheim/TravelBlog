@@ -15,7 +15,7 @@ window.onload = function(){
         images[count].classList.remove('hidden');
         images[count].classList.add('active');
 
-    }, 5000)
+    }, 4000)
     
 }
 
