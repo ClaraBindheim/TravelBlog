@@ -223,6 +223,20 @@ body main a {
   height: 100%;
   object-fit: cover;
 }
+.pages .blog-content .two-image-vertical {
+  display: flex;
+  flex-flow: row;
+  gap: 2%;
+  width: 80%;
+  height: 40vw;
+  margin: auto;
+  margin-top: 5vw;
+}
+.pages .blog-content .two-image-vertical img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .pages .blog-content .one-image-text-horizontal {
   margin: auto;
   margin-top: 5vw;
