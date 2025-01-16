@@ -15,6 +15,7 @@
             .arrow{
                 width: 44px;
                 margin-right: 15px;
+                margin-left: 0%;
             }
 
             a{
@@ -25,10 +26,41 @@
             display: flex;
             flex-flow: row nowrap;
             position: fixed;
-            width: fit-content;
+            width: 12%;
             height: 44px;
             top: 12%;
             left: 2%;
+
+            .menu{
+
+                img{
+                    width: 44px;
+                    height: 44px;
+                }
+
+                .headlineLinks{
+                    display: flex;
+                    flex-flow: column nowrap;
+                    margin-top: 10%;
+
+                    a{
+                        margin: 0%;
+                        margin-bottom: 10%;
+                        padding: 2%;
+                        padding-left: 0%;
+                        border-radius: 10px;
+                        background-color: white;
+                    }
+                }
+
+                .closed{
+                    display: none;
+                }
+
+                .open{
+                    display: flex;
+                }
+            }
         }
 
         .links{
@@ -209,13 +241,19 @@
             .arrow{
                 position: fixed;
                 bottom: 5%;
+                right: 20%;
+
+            }
+
+            .menu{
+
+                position: fixed;
+                bottom: 5%;
                 right: 5%;
 
             }
 
-            #back-text{
-                display: none;
-            }
+            
 
         }
 
