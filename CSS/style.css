@@ -175,7 +175,7 @@ body main a {
   display: flex;
   flex-flow: row nowrap;
   position: fixed;
-  width: fit-content;
+  width: 12%;
   height: 44px;
   top: 12%;
   left: 2%;
@@ -184,11 +184,40 @@ body main a {
 .pages .attribution .back .arrow {
   width: 44px;
   margin-right: 15px;
+  margin-left: 0%;
 }
 .pages .headerImage .back a,
 .pages .attribution .back a {
   font-size: 1.4rem;
   margin: auto;
+}
+.pages .headerImage .back .menu img,
+.pages .attribution .back .menu img {
+  width: 44px;
+  height: 44px;
+}
+.pages .headerImage .back .menu .headlineLinks,
+.pages .attribution .back .menu .headlineLinks {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 10%;
+}
+.pages .headerImage .back .menu .headlineLinks a,
+.pages .attribution .back .menu .headlineLinks a {
+  margin: 0%;
+  margin-bottom: 10%;
+  padding: 2%;
+  padding-left: 0%;
+  border-radius: 10px;
+  background-color: white;
+}
+.pages .headerImage .back .menu .closed,
+.pages .attribution .back .menu .closed {
+  display: none;
+}
+.pages .headerImage .back .menu .open,
+.pages .attribution .back .menu .open {
+  display: flex;
 }
 .pages .headerImage .links,
 .pages .attribution .links {
@@ -328,10 +357,12 @@ body main a {
   .headerImage .back .arrow {
     position: fixed;
     bottom: 5%;
-    right: 5%;
+    right: 20%;
   }
-  .headerImage .back #back-text {
-    display: none;
+  .headerImage .back .menu {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
   }
   .pages .blog-content {
     width: 100%;

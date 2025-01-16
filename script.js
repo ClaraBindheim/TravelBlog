@@ -7,15 +7,47 @@ window.onload = function(){
 
     setInterval(function(){
 
-        images[count].classList.remove('active');
-        images[count].classList.add('hidden');
-        
-        count = (count + 1) % number;
-        
-        images[count].classList.remove('hidden');
-        images[count].classList.add('active');
-
-    }, 4000)
+        if (images.length > 0 && images.length > 0) {
+            
+            images[count].classList.remove('active');
+            images[count].classList.add('hidden');
+            
+            count = (count + 1) % number;
+            
+            images[count].classList.remove('hidden');
+            images[count].classList.add('active');
     
+        
+        }
+        
+
+      
+    }, 4000)
+
+
+    let menu = document.getElementsByClassName('menuIcon');
+    let links = document.getElementsByClassName('headlineLinks');
+
+    if (menu.length > 0 && links.length > 0) {
+
+        menu[0].addEventListener("click", function () {
+            links[0].classList.remove('closed');
+            links[0].classList.add('open');
+            menu[0].classList.remove('open');
+            menu[0].classList.add('closed');
+            menu[1].classList.remove('closed');
+            menu[1].classList.add('open');
+        });
+
+        menu[1].addEventListener("click", function () {
+            links[0].classList.remove('open');
+            links[0].classList.add('closed');
+            menu[0].classList.remove('closed');
+            menu[0].classList.add('open');
+            menu[1].classList.remove('open');
+            menu[1].classList.add('closed');
+        });
+    
+    }
 }
 
