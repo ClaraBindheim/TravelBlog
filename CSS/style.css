@@ -191,6 +191,10 @@ body main a {
   font-size: 1.4rem;
   margin: auto;
 }
+.pages .headerImage .back .menu,
+.pages .attribution .back .menu {
+  cursor: pointer;
+}
 .pages .headerImage .back .menu img,
 .pages .attribution .back .menu img {
   width: 44px;
