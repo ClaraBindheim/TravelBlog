@@ -1,4 +1,9 @@
-        <div class="four-images">
+
+
+<div id="australia-1" class="image-container" data-type="two-image-vertical" data-images="79,80"></div>
+
+
+<div class="four-images">
             <div class="first-row">
                 2imgs
             </div>

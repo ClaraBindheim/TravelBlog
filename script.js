@@ -62,18 +62,33 @@ function fillContainers() {
       const type = container.dataset.type;
       const images = container.dataset.images.split(',');
       const imagePaths = images.map(num => `images/Australia/${num.trim()}.jpg`);
-  
+      const text = container.dataset.text;
+
       container.classList.add(type);
-  
+    
       imagePaths.forEach(path => {
         const img = document.createElement('img');
         img.src = path;
-        img.alt = `Image ${path.split('/').pop()}`;
+        img.alt = '';
         container.appendChild(img);
       });
+
+      if(text !== undefined || text !== null){
+
+        const p = document.createElement('p');
+        p.textContent = text;
+
+        const textDiv = document.createElement('div');
+        textDiv.id = 'text';
+
+        textDiv.appendChild(p);
+
+        container.appendChild(textDiv);
+      }
+
     });
+    
   }
-  
   
   fillContainers();
 }
