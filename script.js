@@ -48,6 +48,37 @@ window.onload = function(){
             menu[1].classList.add('closed');
         });
     
+
     }
+
+
+
+//Änderung: Es dauert zu lange Bilder einzeln hinzuzufügen... Ab Great Ocean road Bilder anders eingefügt    
+function fillContainers() {
+
+    const containers = document.querySelectorAll('.image-container');
+  
+    containers.forEach(container => {
+      const type = container.dataset.type;
+      const images = container.dataset.images.split(',');
+      const imagePaths = images.map(num => `images/Australia/${num.trim()}.jpg`);
+  
+      container.classList.add(type);
+  
+      imagePaths.forEach(path => {
+        const img = document.createElement('img');
+        img.src = path;
+        img.alt = `Image ${path.split('/').pop()}`;
+        container.appendChild(img);
+      });
+    });
+  }
+  
+  
+  fillContainers();
 }
+
+
+
+
 
