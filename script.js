@@ -65,15 +65,15 @@ function fillContainers() {
       const text = container.dataset.text;
 
       container.classList.add(type);
-    
-      imagePaths.forEach(path => {
-        const img = document.createElement('img');
-        img.src = path;
-        img.alt = '';
-        container.appendChild(img);
-      });
 
-      if(text !== undefined || text !== null){
+      if(text && text.trim() !== ''){
+
+        imagePaths.forEach(path => {
+            const img = document.createElement('img');
+            img.src = path;
+            img.alt = '';
+            container.appendChild(img);
+          });
 
         const p = document.createElement('p');
         p.textContent = text;
@@ -85,6 +85,65 @@ function fillContainers() {
 
         container.appendChild(textDiv);
       }
+      else if (type === 'three-images') {
+
+        const div1 = document.createElement('div');
+        div1.classList.add('first-row');
+        const div2 = document.createElement('div');
+        div2.classList.add('second-row');
+      
+        const firstTwoImages = imagePaths.slice(0, 2);
+        firstTwoImages.forEach(path => {
+          const img = document.createElement('img');
+          img.src = path;
+          img.alt = '';
+          div1.appendChild(img);
+        });
+      
+        const thirdImage = document.createElement('img');
+        thirdImage.src = imagePaths[2];
+        thirdImage.alt = '';
+        div2.appendChild(thirdImage);
+      
+        container.appendChild(div1);
+        container.appendChild(div2);
+      }
+      else if (type === 'four-images') {
+
+        const div1 = document.createElement('div');
+        div1.classList.add('first-row');
+        const div2 = document.createElement('div');
+        div2.classList.add('second-row');
+      
+        const firstTwoImages = imagePaths.slice(0, 2);
+        firstTwoImages.forEach(path => {
+          const img = document.createElement('img');
+          img.src = path;
+          img.alt = '';
+          div1.appendChild(img);
+        });
+      
+        const secondTwoImages = imagePaths.slice(2, 4);
+        secondTwoImages.forEach(path => {
+            const img = document.createElement('img');
+            img.src = path;
+            img.alt = '';
+            div2.appendChild(img);
+          });
+      
+        container.appendChild(div1);
+        container.appendChild(div2);
+      }
+      else{
+
+        imagePaths.forEach(path => {
+            const img = document.createElement('img');
+            img.src = path;
+            img.alt = '';
+            container.appendChild(img);
+          });
+      }
+      
 
     });
     
