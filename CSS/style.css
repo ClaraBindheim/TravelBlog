@@ -240,7 +240,7 @@ body main a {
 }
 .pages .blog-content img {
   width: 70vw;
-  object-fit: fill;
+  object-fit: cover;
   border-radius: 30px;
 }
 .pages .blog-content .one-image-horizontal {
@@ -285,6 +285,7 @@ body main a {
   border-top-right-radius: 30px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  object-fit: cover;
 }
 .pages .blog-content .one-image-text-horizontal #text {
   width: 100%;
@@ -317,8 +318,8 @@ body main a {
   background-color: rgb(206, 206, 206);
 }
 .pages .blog-content .one-image-text-vertical #text p {
-  padding: 2%;
-  margin-top: 100%;
+  padding: 3%;
+  margin-top: 80%;
 }
 .pages .blog-content .three-images {
   margin: auto;

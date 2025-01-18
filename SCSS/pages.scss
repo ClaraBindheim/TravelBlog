@@ -86,7 +86,7 @@
 
         img{
             width: 70vw;
-            object-fit: fill;
+            object-fit: cover;
             border-radius: 30px;
         }
 
@@ -141,6 +141,7 @@
                 border-top-right-radius: 30px;
                 border-bottom-left-radius: 0px;
                 border-bottom-right-radius: 0px;
+                object-fit: cover;
             }
 
             #text{
@@ -178,8 +179,8 @@
                 background-color: rgb(206, 206, 206);
                 
                 p{
-                    padding: 2%;
-                    margin-top: 100%;
+                    padding: 3%;
+                    margin-top: 80%;
                 }
             }
         }
