@@ -126,6 +126,16 @@ body main a {
 .attribution .nav ul li a {
   text-decoration: none;
 }
+.home .nzNav,
+.pages .nzNav,
+.attribution .nzNav {
+  width: 80%;
+}
+.home .nzNav ul,
+.pages .nzNav ul,
+.attribution .nzNav ul {
+  gap: 5%;
+}
 .home .impressum,
 .pages .impressum,
 .attribution .impressum {
@@ -144,20 +154,24 @@ body main a {
 }
 
 @media screen and (max-width: 600px) {
-  .home .nav {
+  .home .nav,
+  .pages .nav {
     width: 90%;
     text-align: center;
     margin-top: 10%;
   }
-  .home .nav .nav-part {
+  .home .nav .nav-part,
+  .pages .nav .nav-part {
     flex-flow: column;
     width: 100%;
     padding: 0%;
   }
-  .home .nav .nav-part li {
+  .home .nav .nav-part li,
+  .pages .nav .nav-part li {
     padding-bottom: 10%;
   }
-  .home .impressum {
+  .home .impressum,
+  .pages .impressum {
     width: 40%;
   }
 }

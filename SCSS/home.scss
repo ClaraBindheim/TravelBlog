@@ -88,6 +88,15 @@
         }
     }
 
+    .nzNav{
+
+        width: 80%;
+
+        ul{
+            gap: 5%;
+        }
+    }
+
     .impressum{
 
         margin-top: 5%;
@@ -107,7 +116,8 @@
 
 @media screen and (max-width: 600px) {
 
-    .home{
+    .home,
+    .pages{
 
         .nav{
         
@@ -131,7 +141,6 @@
         }
 
     }
-
     
 }
 
