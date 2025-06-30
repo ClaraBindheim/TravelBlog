@@ -71,6 +71,7 @@ function fillContainers() {
         imagePaths.forEach(path => {
             const img = document.createElement('img');
             img.src = path;
+            img.loading = 'lazy';
             img.alt = '';
             container.appendChild(img);
           });
@@ -96,12 +97,14 @@ function fillContainers() {
         firstTwoImages.forEach(path => {
           const img = document.createElement('img');
           img.src = path;
+          img.loading = 'lazy';
           img.alt = '';
           div1.appendChild(img);
         });
       
         const thirdImage = document.createElement('img');
         thirdImage.src = imagePaths[2];
+        img.loading = 'lazy';
         thirdImage.alt = '';
         div2.appendChild(thirdImage);
       
@@ -119,6 +122,7 @@ function fillContainers() {
         firstTwoImages.forEach(path => {
           const img = document.createElement('img');
           img.src = path;
+          img.loading = 'lazy';
           img.alt = '';
           div1.appendChild(img);
         });
@@ -127,6 +131,7 @@ function fillContainers() {
         secondTwoImages.forEach(path => {
             const img = document.createElement('img');
             img.src = path;
+            img.loading = 'lazy';
             img.alt = '';
             div2.appendChild(img);
           });
@@ -139,6 +144,7 @@ function fillContainers() {
         imagePaths.forEach(path => {
             const img = document.createElement('img');
             img.src = path;
+            img.loading = 'lazy';
             img.alt = '';
             container.appendChild(img);
           });
