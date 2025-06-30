@@ -104,7 +104,7 @@ function fillContainers() {
       
         const thirdImage = document.createElement('img');
         thirdImage.src = imagePaths[2];
-        img.loading = 'lazy';
+        thirdImage.loading = 'lazy';
         thirdImage.alt = '';
         div2.appendChild(thirdImage);
       
