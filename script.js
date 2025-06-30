@@ -61,7 +61,7 @@ function fillContainers() {
     containers.forEach(container => {
       const type = container.dataset.type;
       const images = container.dataset.images.split(',');
-      const imagePaths = images.map(num => `images/Australia/${num.trim()}.jpg`);
+      const imagePaths = images.map(num => `images/Australia/${num.trim()}.webp`);
       const text = container.dataset.text;
 
       container.classList.add(type);
