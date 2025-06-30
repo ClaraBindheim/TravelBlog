@@ -253,7 +253,7 @@ body main a {
   margin-bottom: 5%;
 }
 .pages .blog-content img {
-  aspect-ratio: 1/0;
+  aspect-ratio: 5/2;
   width: 70vw;
   object-fit: cover;
   border-radius: 30px;
