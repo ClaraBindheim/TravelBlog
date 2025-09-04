@@ -50,14 +50,10 @@ window.onload = function(){
     
 
     }
-<<<<<<< HEAD
 
 
 
 //Änderung: Es dauert zu lange Bilder einzeln hinzuzufügen... Ab Great Ocean road Bilder anders eingefügt: Nur Daten eingeben die Bilder werden gefunden    
-=======
- 
->>>>>>> 16e732cd35601810e442b1405ed3d08cb6ea9dcd
 function fillContainers() {
 
     const containers = document.querySelectorAll('.image-container');
