@@ -256,6 +256,10 @@ body main a {
   width: 70vw;
   object-fit: cover;
   border-radius: 30px;
+  display: none;
+}
+.pages .blog-content .lazy {
+  display: block;
 }
 .pages .blog-content .one-image-horizontal {
   margin-top: 5vw;

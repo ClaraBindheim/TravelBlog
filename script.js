@@ -53,7 +53,7 @@ window.onload = function(){
       
 function fillContainers() {
 
-    const containers = document.querySelectorAll('.image-container');
+  const containers = document.querySelectorAll('.image-container');
   
     containers.forEach(container => {
       const type = container.dataset.type;
@@ -63,12 +63,28 @@ function fillContainers() {
 
       container.classList.add(type);
 
-      if(text && text.trim() !== ''){
+      const observer = new IntersectionObserver(entries =>{
 
-        imagePaths.forEach(path => {
+        entries.forEach(entry => {
+
+          entry.target.classList.toggle('lazy', entry.isIntersecting);
+          console.log(entry, entry.isIntersecting);
+        })
+        
+      })
+
+      containers.forEach(container => {
+
+        observer.observe(container);
+      })
+
+        if(text && text.trim() !== ''){
+
+         imagePaths.forEach(path => {
             const img = document.createElement('img');
             img.src = path;
             img.alt = '';
+            img.classList.add('lazy');
             container.appendChild(img);
           });
 
@@ -94,12 +110,14 @@ function fillContainers() {
           const img = document.createElement('img');
           img.src = path;
           img.alt = '';
+          img.classList.add('lazy');
           div1.appendChild(img);
         });
       
         const thirdImage = document.createElement('img');
         thirdImage.src = imagePaths[2];
         thirdImage.alt = '';
+        thirdImage.classList.add('lazy');
         div2.appendChild(thirdImage);
       
         container.appendChild(div1);
@@ -117,6 +135,7 @@ function fillContainers() {
           const img = document.createElement('img');
           img.src = path;
           img.alt = '';
+          img.classList.add('lazy');
           div1.appendChild(img);
         });
       
@@ -125,6 +144,7 @@ function fillContainers() {
             const img = document.createElement('img');
             img.src = path;
             img.alt = '';
+            img.classList.add('lazy');
             div2.appendChild(img);
           });
       
@@ -137,10 +157,10 @@ function fillContainers() {
             const img = document.createElement('img');
             img.src = path;
             img.alt = '';
+            img.classList.add('lazy');
             container.appendChild(img);
           });
-      }
-      
+      } 
 
     });
     
