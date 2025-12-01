@@ -58,7 +58,7 @@ function fillContainers() {
     containers.forEach(container => {
       const type = container.dataset.type;
       const images = container.dataset.images.split(',');
-      const imagePaths = images.map(num => `images/Australia/${num.trim()}.webp`);
+      const imagePaths = images.map(num => `images/Australia/${num.trim()}_compressed.webp`);
       const text = container.dataset.text;
 
       container.classList.add(type);
@@ -68,7 +68,6 @@ function fillContainers() {
         imagePaths.forEach(path => {
             const img = document.createElement('img');
             img.src = path;
-            img.loading = 'lazy';
             img.alt = '';
             container.appendChild(img);
           });
@@ -94,14 +93,12 @@ function fillContainers() {
         firstTwoImages.forEach(path => {
           const img = document.createElement('img');
           img.src = path;
-          img.loading = 'lazy';
           img.alt = '';
           div1.appendChild(img);
         });
       
         const thirdImage = document.createElement('img');
         thirdImage.src = imagePaths[2];
-        thirdImage.loading = 'lazy';
         thirdImage.alt = '';
         div2.appendChild(thirdImage);
       
@@ -119,7 +116,6 @@ function fillContainers() {
         firstTwoImages.forEach(path => {
           const img = document.createElement('img');
           img.src = path;
-          img.loading = 'lazy';
           img.alt = '';
           div1.appendChild(img);
         });
@@ -128,7 +124,6 @@ function fillContainers() {
         secondTwoImages.forEach(path => {
             const img = document.createElement('img');
             img.src = path;
-            img.loading = 'lazy';
             img.alt = '';
             div2.appendChild(img);
           });
@@ -141,7 +136,6 @@ function fillContainers() {
         imagePaths.forEach(path => {
             const img = document.createElement('img');
             img.src = path;
-            img.loading = 'lazy';
             img.alt = '';
             container.appendChild(img);
           });
