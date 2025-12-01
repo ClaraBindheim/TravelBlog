@@ -67,6 +67,7 @@ function fillContainers() {
 
         entries.forEach(entry => {
 
+
           entry.target.classList.toggle('lazy', entry.isIntersecting);
           console.log(entry, entry.isIntersecting);
         })
