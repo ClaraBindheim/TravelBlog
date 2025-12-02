@@ -54,16 +54,8 @@ window.onload = function(){
 function fillContainers() {
 
   const containers = document.querySelectorAll('.image-container');
-  
-    containers.forEach(container => {
-      const type = container.dataset.type;
-      const images = container.dataset.images.split(',');
-      const imagePaths = images.map(num => `images/Australia/${num.trim()}_compressed.webp`);
-      const text = container.dataset.text;
 
-      container.classList.add(type);
-
-      const observer = new IntersectionObserver(entries =>{
+  const observer = new IntersectionObserver(entries =>{
 
         entries.forEach(entry => {
 
@@ -74,10 +66,18 @@ function fillContainers() {
         
       })
 
-      containers.forEach(container => {
+          containers.forEach(container => {
 
         observer.observe(container);
       })
+  
+    containers.forEach(container => {
+      const type = container.dataset.type;
+      const images = container.dataset.images.split(',');
+      const imagePaths = images.map(num => `images/Australia/${num.trim()}_compressed.webp`);
+      const text = container.dataset.text;
+
+      container.classList.add(type);
 
         if(text && text.trim() !== ''){
 
