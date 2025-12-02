@@ -66,7 +66,7 @@ window.onload = function(){
                 }
             });
 
-        }, {threshold: 1.5});
+        }, {threshold: 0.1});
 
 
         containers.forEach(container => {
