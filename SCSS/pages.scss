@@ -91,7 +91,20 @@
             object-fit: cover;
             border-radius: 30px;
             display: block;
+
+            .lazy{
+                opacity: 0;
+                filter: blur(10px);
+                transition: opacity .5s ease, filter .7s ease;
+            }
+
+            .lazy-loaded{
+                    opacity: 1;
+                    filter: blur(0);
+            }
         }
+
+
 
         .one-image-horizontal{
             margin-top: 5vw;

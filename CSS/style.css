@@ -258,6 +258,15 @@ body main a {
   border-radius: 30px;
   display: block;
 }
+.pages .blog-content img .lazy {
+  opacity: 0;
+  filter: blur(10px);
+  transition: opacity 0.5s ease, filter 0.7s ease;
+}
+.pages .blog-content img .lazy-loaded {
+  opacity: 1;
+  filter: blur(0);
+}
 .pages .blog-content .one-image-horizontal {
   margin-top: 5vw;
 }
