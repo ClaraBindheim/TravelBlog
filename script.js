@@ -66,7 +66,7 @@ window.onload = function(){
                 }
             });
 
-        }); // <-- fehlende Klammer HIER
+        }, {threshold: 0.5});
 
 
         containers.forEach(container => {
