@@ -88,11 +88,11 @@
             width: 70vw;
             object-fit: cover;
             border-radius: 30px;
-            display: none;
+            display: block;
         }
 
         .lazy{
-            display: block;
+            display: none;
         }
 
         .one-image-horizontal{
