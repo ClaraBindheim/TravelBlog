@@ -62,7 +62,7 @@ function fillContainers() {
           if(entry.isIntersecting){
             
             console.log(entry.target)
-            entry.target.classList.add('loaded');
+           
           }
           
         })

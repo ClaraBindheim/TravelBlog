@@ -252,12 +252,6 @@ body main a {
   margin: auto;
   margin-bottom: 5%;
 }
-.pages .blog-content .image-container img {
-  opacity: 0;
-}
-.pages .blog-content .loaded img {
-  opacity: 100%;
-}
 .pages .blog-content img {
   width: 70vw;
   object-fit: cover;
