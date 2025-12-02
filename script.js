@@ -59,9 +59,12 @@ function fillContainers() {
 
         entries.forEach(entry => {
 
-
-          entry.target.classList.toggle('lazy', entry.isIntersecting);
-          console.log(entry, entry.isIntersecting);
+          if(entry.isIntersecting){
+            
+            console.log(entry.target)
+            entry.target.classList.add('loaded');
+          }
+          
         })
         
       })
@@ -70,6 +73,7 @@ function fillContainers() {
 
         observer.observe(container);
       })
+
   
     containers.forEach(container => {
       const type = container.dataset.type;
@@ -85,7 +89,6 @@ function fillContainers() {
             const img = document.createElement('img');
             img.src = path;
             img.alt = '';
-            img.classList.add('lazy');
             container.appendChild(img);
           });
 
@@ -111,14 +114,12 @@ function fillContainers() {
           const img = document.createElement('img');
           img.src = path;
           img.alt = '';
-          img.classList.add('lazy');
           div1.appendChild(img);
         });
       
         const thirdImage = document.createElement('img');
         thirdImage.src = imagePaths[2];
         thirdImage.alt = '';
-        thirdImage.classList.add('lazy');
         div2.appendChild(thirdImage);
       
         container.appendChild(div1);
@@ -136,7 +137,6 @@ function fillContainers() {
           const img = document.createElement('img');
           img.src = path;
           img.alt = '';
-          img.classList.add('lazy');
           div1.appendChild(img);
         });
       
@@ -145,7 +145,6 @@ function fillContainers() {
             const img = document.createElement('img');
             img.src = path;
             img.alt = '';
-            img.classList.add('lazy');
             div2.appendChild(img);
           });
       
@@ -158,7 +157,6 @@ function fillContainers() {
             const img = document.createElement('img');
             img.src = path;
             img.alt = '';
-            img.classList.add('lazy');
             container.appendChild(img);
           });
       } 

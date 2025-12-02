@@ -84,15 +84,24 @@
         margin: auto;
         margin-bottom: 5%;
 
+        .image-container{
+            
+            img{
+                opacity: 0;
+            }
+        }
+
+        .loaded{
+            img{
+            opacity: 100%;
+            }
+        }
+
         img{
             width: 70vw;
             object-fit: cover;
             border-radius: 30px;
             display: block;
-        }
-
-        .lazy{
-            display: none;
         }
 
         .one-image-horizontal{
